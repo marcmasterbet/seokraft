@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seokraft — L'artisan du digital</title>
+  <meta name="description" content="Sites web, SEO, SaaS sur mesure. Je construis ta présence en ligne pour vendre et attirer des prospects." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green: #39ff14;
+      --orange: #ff6b00;
+      --blue: #00cfff;
+      --black: #050505;
+      --card: #0a0a0a;
+      --border: #1a1a1a;
+      --white: #ffffff;
+      --muted: #888888;
+      --grad: linear-gradient(90deg, #39ff14, #ff6b00);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 2rem;
+      background: rgba(5,5,5,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      text-decoration: none;
+    }
+    .logo .s { color: var(--green); }
+    .logo .k { color: var(--orange); }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+    .nav-links a {
+      color: var(--blue);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: opacity 0.2s;
+    }
+    .nav-links a:hover { opacity: 0.7; }
+
+    .nav-cta {
+      background: transparent;
+      border: 1px solid var(--green);
+      color: var(--green);
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 9px 22px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s;
+      text-decoration: none;
+    }
+    .nav-cta:hover { background: rgba(57,255,20,0.08); }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 4px;
+    }
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--white);
+      border-radius: 2px;
+      transition: all 0.3s;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 8rem 2rem 5rem;
+      position: relative;
+      overflow: hidden;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .glow-green {
+      position: absolute;
+      top: -150px; left: -150px;
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(57,255,20,0.07) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .glow-orange {
+      position: absolute;
+      top: -80px; right: -150px;
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, rgba(255,107,0,0.09) 0%, transparent 65%);
+      pointer-events: none;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      color: var(--green);
+      font-size: 11px;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 20px;
+      margin-bottom: 2rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      width: fit-content;
+    }
+    .badge-dot {
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: var(--green);
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.8); }
+    }
+
+    h1 {
+      font-size: clamp(44px, 8vw, 80px);
+      font-weight: 700;
+      line-height: 1.0;
+      letter-spacing: -3px;
+      margin-bottom: 1.5rem;
+      color: var(--white);
+    }
+    h1 .green { color: var(--green); }
+    h1 .orange { color: var(--orange); }
+
+    .hero-sub {
+      font-size: clamp(15px, 2vw, 18px);
+      color: var(--white);
+      max-width: 520px;
+      line-height: 1.7;
+      margin-bottom: 2.5rem;
+    }
+
+    .btns {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .btn-primary {
+      background: linear-gradient(90deg, var(--green), var(--orange));
+      color: var(--black);
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      padding: 14px 32px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+    .btn-primary:hover { opacity: 0.9; transform: translateY(-1px); }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--white);
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      padding: 14px 32px;
+      border-radius: 8px;
+      border: 2px solid var(--white);
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .btn-secondary:hover { background: rgba(255,255,255,0.06); transform: translateY(-1px); }
+
+    /* ── DIVIDER ── */
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--green), var(--orange), transparent);
+      opacity: 0.35;
+      margin: 0 2rem;
+    }
+
+    /* ── SECTIONS ── */
+    section {
+      padding: 5rem 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-size: 11px;
+      color: var(--blue);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+
+    .section-title {
+      font-size: clamp(28px, 4vw, 40px);
+      font-weight: 700;
+      letter-spacing: -1.5px;
+      color: var(--white);
+      margin-bottom: 3rem;
+    }
+
+    /* ── SERVICES ── */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+
+    .service-card {
+      background: var(--card);
+      padding: 2rem 1.5rem;
+      transition: background 0.2s;
+    }
+    .service-card:hover { background: #0f0f0f; }
+
+    .service-icon {
+      font-size: 26px;
+      margin-bottom: 1.2rem;
+      display: block;
+    }
+    .service-card:nth-child(1) .service-icon,
+    .service-card:nth-child(4) .service-icon { color: var(--green); }
+    .service-card:nth-child(2) .service-icon,
+    .service-card:nth-child(5) .service-icon { color: var(--blue); }
+    .service-card:nth-child(3) .service-icon,
+    .service-card:nth-child(6) .service-icon { color: var(--orange); }
+
+    .service-card h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+    .service-card p {
+      font-size: 13px;
+      color: var(--white);
+      line-height: 1.65;
+    }
+
+    /* ── PORTFOLIO ── */
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
+    .project-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.75rem;
+      position: relative;
+      overflow: hidden;
+      transition: border-color 0.2s, transform 0.2s;
+      text-decoration: none;
+      display: block;
+    }
+    .project-card:hover { transform: translateY(-2px); }
+    .project-card:nth-child(1):hover { border-color: var(--green); }
+    .project-card:nth-child(2):hover { border-color: var(--orange); }
+    .project-card:nth-child(3):hover { border-color: var(--blue); }
+    .project-card:nth-child(4):hover { border-color: var(--green); }
+
+    .project-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+    }
+    .project-card:nth-child(1)::before { background: var(--green); }
+    .project-card:nth-child(2)::before { background: var(--orange); }
+    .project-card:nth-child(3)::before { background: var(--blue); }
+    .project-card:nth-child(4)::before { background: var(--green); }
+
+    .project-tag {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 0.85rem;
+      display: block;
+    }
+    .project-card:nth-child(1) .project-tag { color: var(--green); }
+    .project-card:nth-child(2) .project-tag { color: var(--orange); }
+    .project-card:nth-child(3) .project-tag { color: var(--blue); }
+    .project-card:nth-child(4) .project-tag { color: var(--green); }
+
+    .project-card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+    .project-card p {
+      font-size: 13px;
+      color: var(--white);
+      line-height: 1.6;
+      margin-bottom: 1.25rem;
+    }
+    .project-url {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    .project-card:nth-child(1) .project-url { color: var(--green); }
+    .project-card:nth-child(2) .project-url { color: var(--orange); }
+    .project-card:nth-child(3) .project-url { color: var(--blue); }
+    .project-card:nth-child(4) .project-url { color: var(--green); }
+
+    /* ── STACK ── */
+    .stack-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .stack-tag {
+      background: var(--card);
+      border: 1px solid var(--border);
+      color: var(--white);
+      font-size: 13px;
+      font-weight: 500;
+      padding: 8px 18px;
+      border-radius: 20px;
+    }
+
+    /* ── CTA ── */
+    .cta-section {
+      margin: 0 2rem 4rem;
+      max-width: 860px;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 20px;
+      padding: 4rem 2rem;
+      text-align: center;
+      border: 1px solid var(--border);
+      background: var(--card);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-glow {
+      position: absolute;
+      bottom: -80px; left: 50%;
+      transform: translateX(-50%);
+      width: 350px; height: 200px;
+      background: radial-gradient(circle, rgba(57,255,20,0.05) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .cta-section h2 {
+      font-size: clamp(26px, 4vw, 38px);
+      font-weight: 700;
+      letter-spacing: -1px;
+      color: var(--white);
+      margin-bottom: 1rem;
+    }
+    .cta-section p {
+      font-size: 15px;
+      color: var(--white);
+      margin-bottom: 2.5rem;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      padding: 1.5rem 2rem;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .footer-logo {
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .footer-logo .s { color: var(--green); }
+    .footer-logo .k { color: var(--orange); }
+
+    footer p {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    /* ── MOBILE ── */
+    @media (max-width: 700px) {
+      nav { padding: 1rem 1.25rem; }
+      .nav-links, .nav-cta { display: none; }
+      .hamburger { display: flex; }
+
+      .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 60px; left: 0; right: 0;
+        background: rgba(5,5,5,0.98);
+        padding: 2rem;
+        gap: 1.5rem;
+        border-bottom: 1px solid var(--border);
+        z-index: 99;
+      }
+      .nav-links.open + .nav-cta { display: block; }
+
+      .hero { padding: 7rem 1.25rem 4rem; }
+      h1 { letter-spacing: -2px; }
+
+      section { padding: 3.5rem 1.25rem; }
+
+      .services-grid { grid-template-columns: 1fr; }
+      .portfolio-grid { grid-template-columns: 1fr; }
+
+      .cta-section { margin: 0 1.25rem 3rem; padding: 3rem 1.5rem; }
+
+      footer { flex-direction: column; gap: 0.75rem; text-align: center; padding: 1.5rem 1.25rem; }
+
+      .divider { margin: 0 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="logo"><span class="s">Seo</span><span class="k">kraft</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#stack">Stack</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Démarrer un projet</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <div style="max-width:900px;margin:0 auto;position:relative;">
+    <section class="hero">
+      <div class="glow-green"></div>
+      <div class="glow-orange"></div>
+      <div class="badge"><span class="badge-dot"></span>Disponible pour nouveaux projets</div>
+      <h1>L'<span class="green">artisan</span><br>du <span class="orange">digital</span></h1>
+      <p class="hero-sub">Sites web, SEO, SaaS sur mesure — je construis ta présence en ligne pour vendre et attirer des prospects.</p>
+      <div class="btns">
+        <a href="#contact" class="btn-primary">Démarrons votre projet →</a>
+        <a href="#portfolio" class="btn-secondary">Voir mes réalisations</a>
+      </div>
+    </section>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <p class="section-label">Ce que je fais</p>
+    <h2 class="section-title">Mes services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <span class="service-icon">⬡</span>
+        <h3>Création web</h3>
+        <p>Du site vitrine à la plateforme complexe, codé sur mesure en Next.js.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">◎</span>
+        <h3>SEO & référencement</h3>
+        <p>Local, géo, technique — je te positionne sur Google durablement.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">⬢</span>
+        <h3>SaaS & plateformes</h3>
+        <p>Applications web complètes avec Supabase, Vercel et TypeScript.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">◈</span>
+        <h3>Audit de visibilité</h3>
+        <p>Airbnb, Booking, Google Business — diagnostic complet et plan d'action.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">◻</span>
+        <h3>Application mobile</h3>
+        <p>iOS & Android avec React Native / Expo — cross-platform natif.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">◆</span>
+        <h3>Maintenance</h3>
+        <p>Suivi, mises à jour, support — je reste disponible après la livraison.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <p class="section-label">Réalisations</p>
+    <h2 class="section-title">Mon portfolio</h2>
+    <div class="portfolio-grid">
+      <a href="https://www.loca-direct.fr" target="_blank" class="project-card">
+        <span class="project-tag">Plateforme</span>
+        <h3>LocaDirect</h3>
+        <p>Location entre particuliers sans commission. Annonces, profils, contact WhatsApp direct.</p>
+        <span class="project-url">loca-direct.fr →</span>
+      </a>
+      <a href="https://www.fairedesdevis.fr" target="_blank" class="project-card">
+        <span class="project-tag">SaaS</span>
+        <h3>FaireDesDevis</h3>
+        <p>Devis en 60 secondes, signature électronique légale, facturation en 1 clic.</p>
+        <span class="project-url">fairedesdevis.fr →</span>
+      </a>
+      <a href="https://www.artisangrandest.fr" target="_blank" class="project-card">
+        <span class="project-tag">Plateforme</span>
+        <h3>ArtisanGrandEst</h3>
+        <p>Mise en relation artisans et particuliers dans toute la région Grand Est.</p>
+        <span class="project-url">artisangrandest.fr →</span>
+      </a>
+      <a href="https://www.boostmoncv.fr" target="_blank" class="project-card">
+        <span class="project-tag">Outil IA</span>
+        <h3>BoostMonCV</h3>
+        <p>Analyse de CV par IA, score ATS, mots-clés manquants, lettre de motivation générée.</p>
+        <span class="project-url">boostmoncv.fr →</span>
+      </a>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- STACK -->
+  <section id="stack">
+    <p class="section-label">Technologies</p>
+    <h2 class="section-title">Ma stack</h2>
+    <div class="stack-grid">
+      <span class="stack-tag">Next.js</span>
+      <span class="stack-tag">TypeScript</span>
+      <span class="stack-tag">React Native</span>
+      <span class="stack-tag">Supabase</span>
+      <span class="stack-tag">Vercel</span>
+      <span class="stack-tag">GitHub</span>
+      <span class="stack-tag">Hostinger</span>
+      <span class="stack-tag">Expo</span>
+      <span class="stack-tag">SEO technique</span>
+      <span class="stack-tag">Google Analytics</span>
+      <span class="stack-tag">Search Console</span>
+      <span class="stack-tag">Google Business</span>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- CTA CONTACT -->
+  <div id="contact" style="padding: 4rem 0 2rem;">
+    <div class="cta-section">
+      <div class="cta-glow"></div>
+      <h2>Prêt à démarrer votre projet ?</h2>
+      <p>Discutons de vos besoins — réponse garantie sous 24h.</p>
+      <a href="mailto:bretzner.marc@bbox.fr" class="btn-primary">Contactez-moi →</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <a href="#" class="footer-logo"><span class="s">Seo</span><span class="k">kraft</span></a>
+    <p>© 2026 Seokraft — seokraft.fr</p>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => navLinks.classList.remove('open'));
+    });
+  </script>
+
+</body>
+</html>
