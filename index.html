@@ -465,6 +465,7 @@
 
       .services-grid { grid-template-columns: 1fr; }
       .portfolio-grid { grid-template-columns: 1fr; }
+      #tarifs > div { grid-template-columns: 1fr !important; }
 
       .cta-section { margin: 0 1.25rem 3rem; padding: 3rem 1.5rem; }
 
@@ -483,6 +484,7 @@
       <li><a href="#services">Services</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
       <li><a href="#stack">Stack</a></li>
+      <li><a href="#tarifs">Tarifs</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <a href="#contact" class="nav-cta">Démarrer un projet</a>
@@ -604,12 +606,89 @@
 
   <div class="divider"></div>
 
+  <!-- TARIFS -->
+  <section id="tarifs">
+    <p class="section-label">Offres</p>
+    <h2 class="section-title">Tarifs transparents</h2>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;">
+
+      <!-- STARTER -->
+      <div style="background:var(--card);border:1px solid #39ff14;border-radius:16px;padding:2rem 1.5rem;display:flex;flex-direction:column;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:#39ff14;border-radius:16px 16px 0 0;"></div>
+        <p style="font-size:11px;color:#39ff14;text-transform:uppercase;letter-spacing:3px;font-weight:600;margin-bottom:0.5rem;">Starter</p>
+        <div style="margin-bottom:0.25rem;">
+          <span style="font-size:42px;font-weight:700;color:#fff;">39€</span>
+          <span style="font-size:14px;color:var(--muted);">/mois</span>
+        </div>
+        <p style="font-size:12px;color:var(--muted);margin-bottom:1.5rem;">Sans engagement</p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.75rem;margin-bottom:2rem;flex:1;">
+          <li style="font-size:14px;color:#ccc;display:flex;gap:10px;"><span style="color:#39ff14;font-weight:700;">✓</span>Site vitrine jusqu'à 5 pages</li>
+          <li style="font-size:14px;color:#ccc;display:flex;gap:10px;"><span style="color:#39ff14;font-weight:700;">✓</span>Design personnalisé à votre image</li>
+          <li style="font-size:14px;color:#ccc;display:flex;gap:10px;"><span style="color:#39ff14;font-weight:700;">✓</span>100% responsive mobile</li>
+          <li style="font-size:14px;color:#ccc;display:flex;gap:10px;"><span style="color:#39ff14;font-weight:700;">✓</span>Formulaire de contact</li>
+          <li style="font-size:14px;color:#ccc;display:flex;gap:10px;"><span style="color:#39ff14;font-weight:700;">✓</span>Nom de domaine inclus 1ère année — vous en êtes propriétaire</li>
+          <li style="font-size:14px;color:#ccc;display:flex;gap:10px;"><span style="color:#39ff14;font-weight:700;">✓</span>Hébergement inclus</li>
+          <li style="font-size:14px;color:#ccc;display:flex;gap:10px;"><span style="color:#39ff14;font-weight:700;">✓</span>Certificat SSL inclus</li>
+          <li style="font-size:14px;color:#ccc;display:flex;gap:10px;"><span style="color:#39ff14;font-weight:700;">✓</span>1 modification par mois</li>
+        </ul>
+        <a href="#contact" style="display:block;text-align:center;padding:13px;border-radius:8px;background:transparent;border:1px solid #39ff14;color:#39ff14;font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:600;text-decoration:none;transition:background 0.2s;" onmouseover="this.style.background='rgba(57,255,20,0.08)'" onmouseout="this.style.background='transparent'">Démarrer →</a>
+      </div>
+
+      <!-- GROWTH -->
+      <div style="background:var(--card);border:1px solid #ff6b00;border-radius:16px;padding:2rem 1.5rem;display:flex;flex-direction:column;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:#ff6b00;border-radius:16px 16px 0 0;"></div>
+        <div style="position:absolute;top:1.2rem;right:1.2rem;background:#ff6b00;color:#000;font-size:10px;font-weight:700;padding:4px 10px;border-radius:20px;letter-spacing:1px;text-transform:uppercase;">Populaire</div>
+        <p style="font-size:11px;color:#ff6b00;text-transform:uppercase;letter-spacing:3px;font-weight:600;margin-bottom:0.5rem;">Growth</p>
+        <div style="margin-bottom:0.25rem;">
+          <span style="font-size:42px;font-weight:700;color:#fff;">89€</span>
+          <span style="font-size:14px;color:var(--muted);">/mois</span>
+        </div>
+        <p style="font-size:12px;color:var(--muted);margin-bottom:1.5rem;">Engagement 6 mois minimum</p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.75rem;margin-bottom:2rem;flex:1;">
+          <li style="font-size:14px;color:#ccc;display:flex;gap:10px;"><span style="color:#ff6b00;font-weight:700;">✓</span>Tout le Starter inclus</li>
+          <li style="font-size:14px;color:#ccc;display:flex;gap:10px;"><span style="color:#ff6b00;font-weight:700;">✓</span>SEO technique complet</li>
+          <li style="font-size:14px;color:#ccc;display:flex;gap:10px;"><span style="color:#ff6b00;font-weight:700;">✓</span>Fiche Google Business optimisée</li>
+          <li style="font-size:14px;color:#ccc;display:flex;gap:10px;"><span style="color:#ff6b00;font-weight:700;">✓</span>Référencement local & géolocalisé</li>
+          <li style="font-size:14px;color:#ccc;display:flex;gap:10px;"><span style="color:#ff6b00;font-weight:700;">✓</span>Rapport mensuel Search Console</li>
+          <li style="font-size:14px;color:#ccc;display:flex;gap:10px;"><span style="color:#ff6b00;font-weight:700;">✓</span>3 modifications par mois</li>
+          <li style="font-size:14px;color:#ccc;display:flex;gap:10px;"><span style="color:#ff6b00;font-weight:700;">✓</span>Support email sous 48h</li>
+        </ul>
+        <a href="#contact" style="display:block;text-align:center;padding:13px;border-radius:8px;background:linear-gradient(90deg,#ff6b00,#ff9500);color:#000;font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:700;text-decoration:none;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.9'" onmouseout="this.style.opacity='1'">Démarrer →</a>
+      </div>
+
+      <!-- PRO -->
+      <div style="background:var(--card);border:1px solid #00cfff;border-radius:16px;padding:2rem 1.5rem;display:flex;flex-direction:column;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:#00cfff;border-radius:16px 16px 0 0;"></div>
+        <p style="font-size:11px;color:#00cfff;text-transform:uppercase;letter-spacing:3px;font-weight:600;margin-bottom:0.5rem;">Pro</p>
+        <div style="margin-bottom:0.25rem;">
+          <span style="font-size:42px;font-weight:700;color:#fff;">189€</span>
+          <span style="font-size:14px;color:var(--muted);">/mois</span>
+        </div>
+        <p style="font-size:12px;color:var(--muted);margin-bottom:1.5rem;">Engagement 12 mois minimum</p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.75rem;margin-bottom:2rem;flex:1;">
+          <li style="font-size:14px;color:#ccc;display:flex;gap:10px;"><span style="color:#00cfff;font-weight:700;">✓</span>Tout le Growth inclus</li>
+          <li style="font-size:14px;color:#ccc;display:flex;gap:10px;"><span style="color:#00cfff;font-weight:700;">✓</span>Application web ou SaaS sur mesure</li>
+          <li style="font-size:14px;color:#ccc;display:flex;gap:10px;"><span style="color:#00cfff;font-weight:700;">✓</span>Intégrations API (paiement, réservation…)</li>
+          <li style="font-size:14px;color:#ccc;display:flex;gap:10px;"><span style="color:#00cfff;font-weight:700;">✓</span>Tableau de bord admin personnalisé</li>
+          <li style="font-size:14px;color:#ccc;display:flex;gap:10px;"><span style="color:#00cfff;font-weight:700;">✓</span>Modifications illimitées</li>
+          <li style="font-size:14px;color:#ccc;display:flex;gap:10px;"><span style="color:#00cfff;font-weight:700;">✓</span>Support prioritaire 7j/7 sous 4h</li>
+          <li style="font-size:14px;color:#ccc;display:flex;gap:10px;"><span style="color:#00cfff;font-weight:700;">✓</span>Réunion mensuelle de suivi</li>
+        </ul>
+        <a href="#contact" style="display:block;text-align:center;padding:13px;border-radius:8px;background:transparent;border:1px solid #00cfff;color:#00cfff;font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:600;text-decoration:none;transition:background 0.2s;" onmouseover="this.style.background='rgba(0,207,255,0.08)'" onmouseout="this.style.background='transparent'">Démarrer →</a>
+      </div>
+
+    </div>
+    <p style="text-align:center;margin-top:2rem;font-size:14px;color:var(--muted);">Projet hors forfait ? <a href="#contact" style="color:var(--green);text-decoration:none;font-weight:600;">Demandez un devis →</a></p>
+  </section>
+
+  <div class="divider"></div>
+
   <!-- CTA CONTACT -->
   <div id="contact" style="padding: 4rem 0 2rem;">
     <div class="cta-section">
       <div class="cta-glow"></div>
       <h2>Prêt à démarrer votre projet ?</h2>
-      <p>Discutons de vos besoins — réponse sous 48h.</p>
+      <p>Discutons de vos besoins — réponse garantie sous 24h.</p>
       <form id="contactForm" action="https://formspree.io/f/maewolkq" method="POST" style="max-width:480px;margin:0 auto;text-align:left;">
         <div style="margin-bottom:1rem;">
           <input type="text" name="name" placeholder="Votre nom" required
@@ -632,7 +711,7 @@
             onfocus="this.style.borderColor='#39ff14'" onblur="this.style.borderColor='#1a1a1a'"></textarea>
         </div>
         <button type="submit" class="btn-primary" style="width:100%;text-align:center;">Envoyer le message →</button>
-        <p id="formMsg" style="margin-top:1rem;text-align:center;font-size:14px;color:#39ff14;display:none;">✓ Message envoyé ! Je vous réponds sous 48h.</p>
+        <p id="formMsg" style="margin-top:1rem;text-align:center;font-size:14px;color:#39ff14;display:none;">✓ Message envoyé ! Je vous réponds sous 24h.</p>
       </form>
     </div>
   </div>
