@@ -1,32 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
     <loc>https://www.seokraft.fr/</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-08-17</lastmod>
   </url>
-
   <url>
-    <loc>https://www.seokraft.fr/blog-seo.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.seokraft.fr/creation-site-internet/</loc>
+    <lastmod>2026-08-17</lastmod>
   </url>
-
   <url>
-    <loc>https://www.seokraft.fr/blog-seo-local.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.seokraft.fr/creation-site-internet-strasbourg/</loc>
+    <lastmod>2026-08-17</lastmod>
   </url>
-
   <url>
-    <loc>https://www.seokraft.fr/blog-geo.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.seokraft.fr/referencement-seo/</loc>
+    <lastmod>2026-08-17</lastmod>
   </url>
-
+  <url>
+    <loc>https://www.seokraft.fr/referencement-local/</loc>
+    <lastmod>2026-08-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.seokraft.fr/consultant-seo-strasbourg/</loc>
+    <lastmod>2026-08-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.seokraft.fr/audit-seo/</loc>
+    <lastmod>2026-08-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.seokraft.fr/geo/</loc>
+    <lastmod>2026-08-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.seokraft.fr/site-internet-artisan/</loc>
+    <lastmod>2026-08-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.seokraft.fr/site-internet-electricien/</loc>
+    <lastmod>2026-08-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.seokraft.fr/site-internet-plombier/</loc>
+    <lastmod>2026-08-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.seokraft.fr/site-internet-menuisier/</loc>
+    <lastmod>2026-08-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.seokraft.fr/developpeur-web-strasbourg/</loc>
+    <lastmod>2026-08-17</lastmod>
+  </url>
 </urlset>
