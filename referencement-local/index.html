@@ -521,20 +521,20 @@
           <input type="hidden" name="_subject" value="Demande de rappel — référencement local — Seokraft">
           <input type="text" name="_gotcha" class="sr-only" tabindex="-1" autocomplete="off" aria-hidden="true">
           <div style="margin-bottom:1rem;">
-            <label class="sr-only" for="contact-name">Votre nom</label>
-            <input id="contact-name" type="text" name="name" autocomplete="name" required style="width:100%;padding:13px 16px;background:#111;border:1px solid #1a1a1a;border-radius:8px;color:#fff;font-family:'Space Grotesk',sans-serif;font-size:15px;outline:none;">
+            
+            <label for="contact-name" style="display:block;margin-bottom:.45rem;color:#d0d0d0;font-size:13px;font-weight:600;">Nom *</label><input id="contact-name" type="text" name="name" autocomplete="name" style="width:100%;padding:13px 16px;background:#111;border:1px solid #1a1a1a;border-radius:8px;color:#fff;font-family:'Space Grotesk',sans-serif;font-size:15px;outline:none;" required>
           </div>
           <div style="margin-bottom:1rem;">
-            <label class="sr-only" for="contact-email">Votre email</label>
-            <input id="contact-email" type="email" name="email" autocomplete="email" style="width:100%;padding:13px 16px;background:#111;border:1px solid #1a1a1a;border-radius:8px;color:#fff;font-family:'Space Grotesk',sans-serif;font-size:15px;outline:none;">
+            
+            <label for="contact-email" style="display:block;margin-bottom:.45rem;color:#d0d0d0;font-size:13px;font-weight:600;">E-mail</label><input id="contact-email" type="email" name="email" autocomplete="email" style="width:100%;padding:13px 16px;background:#111;border:1px solid #1a1a1a;border-radius:8px;color:#fff;font-family:'Space Grotesk',sans-serif;font-size:15px;outline:none;">
           </div>
           <div style="margin-bottom:1rem;">
-            <label class="sr-only" for="contact-phone">Votre téléphone</label>
-            <input id="contact-phone" type="tel" name="phone" autocomplete="tel" inputmode="tel" required style="width:100%;padding:13px 16px;background:#111;border:1px solid #1a1a1a;border-radius:8px;color:#fff;font-family:'Space Grotesk',sans-serif;font-size:15px;outline:none;">
+            
+            <label for="contact-phone" style="display:block;margin-bottom:.45rem;color:#d0d0d0;font-size:13px;font-weight:600;">Téléphone *</label><input id="contact-phone" type="tel" name="phone" autocomplete="tel" inputmode="tel" style="width:100%;padding:13px 16px;background:#111;border:1px solid #1a1a1a;border-radius:8px;color:#fff;font-family:'Space Grotesk',sans-serif;font-size:15px;outline:none;" required>
           </div>
           <div style="margin-bottom:1rem;">
-            <label class="sr-only" for="contact-project-type">Type de besoin</label>
-            <select id="contact-project-type" name="project_type" style="width:100%;padding:13px 16px;background:#111;border:1px solid #1a1a1a;border-radius:8px;color:#fff;font-family:'Space Grotesk',sans-serif;font-size:15px;outline:none;">
+            
+            <label for="contact-project-type" style="display:block;margin-bottom:.45rem;color:#d0d0d0;font-size:13px;font-weight:600;">Votre projet</label><select id="contact-project-type" name="project_type" style="width:100%;padding:13px 16px;background:#111;border:1px solid #1a1a1a;border-radius:8px;color:#fff;font-family:'Space Grotesk',sans-serif;font-size:15px;outline:none;">
               <option value=""></option>
               <option value="creation-site">Créer un site internet</option>
               <option value="refonte">Refondre mon site actuel</option>
@@ -548,11 +548,11 @@
             <input id="contact-site" type="url" name="site" autocomplete="url" style="width:100%;padding:13px 16px;background:#111;border:1px solid #1a1a1a;border-radius:8px;color:#fff;font-family:'Space Grotesk',sans-serif;font-size:15px;outline:none;">
           </div>
           <div style="margin-bottom:1.5rem;">
-            <label class="sr-only" for="contact-message">Votre projet</label>
-            <textarea id="contact-message" name="message" rows="4" style="width:100%;padding:13px 16px;background:#111;border:1px solid #1a1a1a;border-radius:8px;color:#fff;font-family:'Space Grotesk',sans-serif;font-size:15px;outline:none;resize:vertical;"></textarea>
+            
+            <label for="contact-message" style="display:block;margin-bottom:.45rem;color:#d0d0d0;font-size:13px;font-weight:600;">Message</label><textarea id="contact-message" name="message" rows="4" style="width:100%;padding:13px 16px;background:#111;border:1px solid #1a1a1a;border-radius:8px;color:#fff;font-family:'Space Grotesk',sans-serif;font-size:15px;outline:none;resize:vertical;"></textarea>
           </div>
           
-          <button type="submit" class="btn-primary" style="width:100%;text-align:center;cursor:pointer;">Envoyer ma demande de rappel →</button>
+          <p style="font-size:12px;color:var(--muted);margin:.2rem 0 1rem;">* Nom et téléphone uniquement obligatoires.</p><button type="submit" class="btn-primary" style="width:100%;text-align:center;cursor:pointer;">Envoyer ma demande de rappel →</button>
           <p id="formMsg" role="status" aria-live="polite" style="margin-top:1rem;text-align:center;font-size:14px;display:none;"></p>
         </form>
       </div>
