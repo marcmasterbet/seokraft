@@ -27,130 +27,215 @@
   <meta name="twitter:image" content="https://www.seokraft.fr/og-image.jpg" />
 
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": "https://www.seokraft.fr/#website",
-        "url": "https://www.seokraft.fr/",
-        "name": "Seokraft",
-        "inLanguage": "fr-FR"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.seokraft.fr/#website",
+      "url": "https://www.seokraft.fr/",
+      "name": "Seokraft",
+      "inLanguage": "fr-FR"
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://www.seokraft.fr/#business",
+      "name": "Seokraft",
+      "url": "https://www.seokraft.fr/",
+      "image": "https://www.seokraft.fr/og-image.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Fegersheim",
+        "addressRegion": "Grand Est",
+        "postalCode": "67640",
+        "addressCountry": "FR"
       },
-      {
-        "@type": "ProfessionalService",
-        "@id": "https://www.seokraft.fr/#business",
-        "name": "Seokraft",
-        "url": "https://www.seokraft.fr/",
-        "image": "https://www.seokraft.fr/og-image.jpg",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Fegersheim",
-          "addressRegion": "Grand Est",
-          "postalCode": "67640",
-          "addressCountry": "FR"
-        },
-        "areaServed": { "@type": "Country", "name": "France" }
+      "areaServed": {
+        "@type": "Country",
+        "name": "France"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.seokraft.fr/creation-site-internet/#webpage",
+      "url": "https://www.seokraft.fr/creation-site-internet/",
+      "name": "Création de Site Internet Professionnel | Seokraft",
+      "description": "Création de site internet professionnel sur mesure : site vitrine, site artisan, application web, SaaS. Rapide, optimisé SEO, 100 % responsive.",
+      "isPartOf": {
+        "@id": "https://www.seokraft.fr/#website"
       },
-      {
-        "@type": "WebPage",
-        "@id": "https://www.seokraft.fr/creation-site-internet/#webpage",
-        "url": "https://www.seokraft.fr/creation-site-internet/",
-        "name": "Création de Site Internet Professionnel | Seokraft",
-        "description": "Création de site internet professionnel sur mesure : site vitrine, site artisan, application web, SaaS. Rapide, optimisé SEO, 100 % responsive.",
-        "isPartOf": { "@id": "https://www.seokraft.fr/#website" },
-        "about": { "@id": "https://www.seokraft.fr/#business" },
-        "inLanguage": "fr-FR",
-        "breadcrumb": { "@id": "https://www.seokraft.fr/creation-site-internet/#breadcrumb" }
+      "about": {
+        "@id": "https://www.seokraft.fr/#business"
       },
-      {
-        "@type": "Service",
-        "@id": "https://www.seokraft.fr/creation-site-internet/#service",
-        "name": "Création de site internet professionnel",
-        "serviceType": "Création de site internet",
-        "provider": { "@id": "https://www.seokraft.fr/#business" },
-        "areaServed": { "@type": "Country", "name": "France" },
-        "description": "Création de sites internet professionnels sur mesure : sites vitrines, sites pour artisans, applications web et SaaS. Développement en code propre, optimisation SEO intégrée, responsive mobile.",
-        "url": "https://www.seokraft.fr/creation-site-internet/",
-        "mainEntityOfPage": { "@id": "https://www.seokraft.fr/creation-site-internet/#webpage" },
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Offres création site internet",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "name": "Starter — Site vitrine",
+      "inLanguage": "fr-FR",
+      "breadcrumb": {
+        "@id": "https://www.seokraft.fr/creation-site-internet/#breadcrumb"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.seokraft.fr/creation-site-internet/#service",
+      "name": "Création de site internet professionnel",
+      "serviceType": "Création de site internet",
+      "provider": {
+        "@id": "https://www.seokraft.fr/#business"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "France"
+      },
+      "description": "Création de sites internet professionnels sur mesure : sites vitrines, sites pour artisans, applications web et SaaS. Développement en code propre, optimisation SEO intégrée, responsive mobile.",
+      "url": "https://www.seokraft.fr/creation-site-internet/",
+      "mainEntityOfPage": {
+        "@id": "https://www.seokraft.fr/creation-site-internet/#webpage"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Offres Seokraft",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Vitrine",
+            "price": "39",
+            "priceCurrency": "EUR",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
               "price": "39",
               "priceCurrency": "EUR",
-              "priceSpecification": { "@type": "UnitPriceSpecification", "price": "39", "priceCurrency": "EUR", "billingDuration": "P1M" },
-              "description": "Site vitrine jusqu'à 5 pages, design sur mesure, hébergement et SSL inclus"
+              "billingDuration": "P1M"
             },
-            {
-              "@type": "Offer",
-              "name": "Growth — Site + SEO",
+            "description": "Site vitrine jusqu'à 5 pages, responsive, hébergement, SSL, formulaire et maintenance technique."
+          },
+          {
+            "@type": "Offer",
+            "name": "SEO Local",
+            "price": "99",
+            "priceCurrency": "EUR",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
               "price": "99",
               "priceCurrency": "EUR",
-              "priceSpecification": { "@type": "UnitPriceSpecification", "price": "99", "priceCurrency": "EUR", "billingDuration": "P1M" },
-              "description": "Site vitrine + SEO technique complet + Google Business + référencement local"
+              "billingDuration": "P1M"
             },
-            {
-              "@type": "Offer",
-              "name": "Pro — SaaS & application",
+            "description": "Optimisations SEO prioritaires, Google Business Profile, référencement local, suivi des positions et rapport mensuel."
+          },
+          {
+            "@type": "Offer",
+            "name": "SEO + GEO",
+            "price": "189",
+            "priceCurrency": "EUR",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
               "price": "189",
               "priceCurrency": "EUR",
-              "priceSpecification": { "@type": "UnitPriceSpecification", "price": "189", "priceCurrency": "EUR", "billingDuration": "P1M" },
-              "description": "Application web ou SaaS sur mesure + SEO + GEO + support prioritaire"
-            }
-          ]
-        }
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": "https://www.seokraft.fr/creation-site-internet/#breadcrumb",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.seokraft.fr/" },
-          { "@type": "ListItem", "position": 2, "name": "Création site internet", "item": "https://www.seokraft.fr/creation-site-internet/" }
-        ]
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://www.seokraft.fr/creation-site-internet/#faq",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Combien coûte la création d'un site internet professionnel ?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Chez Seokraft, un site vitrine professionnel démarre à 39 €/mois tout compris : hébergement, SSL, nom de domaine la première année, maintenance et modifications incluses. Un site avec SEO local intégré est disponible à partir de 99 €/mois. Un devis gratuit est fourni sous 24h." }
+              "billingDuration": "P1M"
+            },
+            "description": "SEO Local, optimisation GEO, entités et données structurées pertinentes, optimisation des contenus et un contenu stratégique par mois."
           },
           {
-            "@type": "Question",
-            "name": "Quelle est la différence entre un site vitrine et un site e-commerce ?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Un site vitrine présente votre activité, vos services et vos coordonnées pour générer des contacts et des appels. Un site e-commerce permet en plus de vendre des produits en ligne avec un système de paiement, un panier et une gestion des stocks. Seokraft réalise principalement des sites vitrines, des sites artisans et des applications web sur mesure." }
+            "@type": "Offer",
+            "name": "Business",
+            "price": "249",
+            "priceCurrency": "EUR",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "249",
+              "priceCurrency": "EUR",
+              "billingDuration": "P1M"
+            },
+            "description": "SEO + GEO, deux contenus stratégiques par mois, analyse concurrentielle, suivi renforcé et rendez-vous stratégie de 30 minutes par mois."
           },
           {
-            "@type": "Question",
-            "name": "Vaut-il mieux créer son site avec WordPress ou en code sur mesure ?",
-            "acceptedAnswer": { "@type": "Answer", "text": "WordPress est pratique pour gérer du contenu régulièrement, mais peut être plus lent et plus lourd à maintenir. Le développement sur mesure offre plus de performance, de sécurité et de flexibilité. Chez Seokraft, je développe en HTML/CSS/JS ou Next.js selon le projet, sans template, pour un résultat plus rapide et plus optimisé SEO." }
-          },
-          {
-            "@type": "Question",
-            "name": "Combien de temps faut-il pour créer un site internet ?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Un site vitrine est livré en 5 à 10 jours ouvrés après validation du devis et réception des contenus. Une application web ou un SaaS prend entre 3 et 8 semaines selon les fonctionnalités. Le délai précis est indiqué dans le devis." }
-          },
-          {
-            "@type": "Question",
-            "name": "Mon site sera-t-il optimisé pour Google ?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Chaque site est livré avec une base SEO technique solide : balises optimisées, performances, version mobile et données structurées Schema.org. Les formules Growth et Pro ajoutent un accompagnement SEO local destiné à améliorer votre visibilité. Le positionnement dépend ensuite notamment de la concurrence, du contenu et de l’autorité du site." }
-          },
-          {
-            "@type": "Question",
-            "name": "Est-ce que mon site fonctionnera bien sur mobile ?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Oui. Tous les sites réalisés par Seokraft sont conçus d'abord pour mobile (mobile-first), puis adaptés pour les écrans plus larges. Chaque page est testée sur smartphone avant livraison." }
+            "@type": "Offer",
+            "name": "Premium",
+            "price": "349",
+            "priceCurrency": "EUR",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "349",
+              "priceCurrency": "EUR",
+              "billingDuration": "P1M"
+            },
+            "description": "Business, jusqu'à quatre contenus SEO/GEO par mois, stratégie éditoriale, rapport détaillé et rendez-vous stratégie d'une heure par mois."
           }
         ]
       }
-    ]
-  }
-  </script>
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.seokraft.fr/creation-site-internet/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://www.seokraft.fr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Création site internet",
+          "item": "https://www.seokraft.fr/creation-site-internet/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.seokraft.fr/creation-site-internet/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Combien coûte la création d'un site internet professionnel ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Chez Seokraft, un site vitrine professionnel démarre à 39 €/mois tout compris : hébergement, SSL, nom de domaine la première année, maintenance et modifications incluses. Un site avec SEO local intégré est disponible à partir de 99 €/mois. Un devis gratuit est fourni sous 24h."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quelle est la différence entre un site vitrine et un site e-commerce ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Un site vitrine présente votre activité, vos services et vos coordonnées pour générer des contacts et des appels. Un site e-commerce permet en plus de vendre des produits en ligne avec un système de paiement, un panier et une gestion des stocks. Seokraft réalise principalement des sites vitrines, des sites artisans et des applications web sur mesure."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Vaut-il mieux créer son site avec WordPress ou en code sur mesure ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "WordPress est pratique pour gérer du contenu régulièrement, mais peut être plus lent et plus lourd à maintenir. Le développement sur mesure offre plus de performance, de sécurité et de flexibilité. Chez Seokraft, je développe en HTML/CSS/JS ou Next.js selon le projet, sans template, pour un résultat plus rapide et plus optimisé SEO."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Combien de temps faut-il pour créer un site internet ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Un site vitrine est livré en 5 à 10 jours ouvrés après validation du devis et réception des contenus. Une application web ou un SaaS prend entre 3 et 8 semaines selon les fonctionnalités. Le délai précis est indiqué dans le devis."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Mon site sera-t-il optimisé pour Google ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Chaque site est livré avec une base SEO technique solide : balises optimisées, performances, version mobile et données structurées Schema.org. Les formules SEO + GEO et Pro ajoutent un accompagnement SEO local destiné à améliorer votre visibilité. Le positionnement dépend ensuite notamment de la concurrence, du contenu et de l’autorité du site."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Est-ce que mon site fonctionnera bien sur mobile ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. Tous les sites réalisés par Seokraft sont conçus d'abord pour mobile (mobile-first), puis adaptés pour les écrans plus larges. Chaque page est testée sur smartphone avant livraison."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18388328221"></script>
   <script>
@@ -400,98 +485,101 @@
   <div class="divider"></div>
 
   <!-- POURQUOI UN SITE -->
-  <section>
-    <p class="section-label reveal">Pourquoi c'est indispensable</p>
-    <h2 class="section-title reveal reveal-delay-1">Un site internet, c'est votre premier <span style="color:var(--green);">commercial</span></h2>
-    <p class="section-intro reveal reveal-delay-2">Avant d'appeler, avant de demander à un ami, avant d'aller en boutique — vos clients cherchent sur Google. Si vous n'avez pas de site, ou si votre site est lent, mal affiché sur mobile ou introuvable, vous perdez des prospects chaque jour sans même le savoir.</p>
+  
+<section id="tarifs">
+  <p class="section-label reveal">Tarifs Seokraft</p>
+  <h2 class="section-title reveal reveal-delay-1">Choisissez votre niveau d'accompagnement</h2>
+  <p class="section-intro reveal reveal-delay-2">
+    Une gamme simple : votre site, votre visibilité locale, puis un accompagnement SEO + GEO de plus en plus soutenu.
+    Les positions Google et les citations par des assistants IA ne peuvent jamais être garanties.
+  </p>
 
-    <div class="grid-3 reveal reveal-delay-3">
-      <div class="avantage-card">
-        <span class="avantage-icon" style="color:var(--green);">📈</span>
-        <h3>Visibilité 24h/24</h3>
-        <p>Votre site travaille pour vous même quand vous dormez. Un prospect qui cherche vos services à 23h peut vous trouver, lire vos tarifs et vous envoyer un message.</p>
-      </div>
-      <div class="avantage-card">
-        <span class="avantage-icon" style="color:var(--blue);">🎯</span>
-        <h3>Crédibilité immédiate</h3>
-        <p>Un site professionnel inspire confiance. Il montre votre sérieux, vos réalisations et vos tarifs — avant même que le client vous contacte.</p>
-      </div>
-      <div class="avantage-card">
-        <span class="avantage-icon" style="color:var(--orange);">💰</span>
-        <h3>Génération de prospects</h3>
-        <p>Un site bien conçu convertit les visiteurs en contacts. Formulaire de devis, numéro de téléphone, appel à l'action clair — chaque page a un objectif commercial.</p>
-      </div>
-      <div class="avantage-card">
-        <span class="avantage-icon" style="color:var(--green);">🔍</span>
-        <h3>Référencement local</h3>
-        <p>Un site optimisé peut améliorer votre visibilité sur des recherches locales comme "plombier Strasbourg", "coiffeur Lyon" ou "électricien Bordeaux". L’objectif est d’attirer un trafic qualifié et durable.</p>
-      </div>
-      <div class="avantage-card">
-        <span class="avantage-icon" style="color:var(--blue);">📱</span>
-        <h3>Mobile d'abord</h3>
-        <p>Une part importante des recherches se fait sur smartphone. Un site mal adapté au mobile peut faire fuir des prospects. Tous mes sites sont conçus avec une approche mobile-first.</p>
-      </div>
-      <div class="avantage-card">
-        <span class="avantage-icon" style="color:var(--orange);">🤖</span>
-        <h3>Visible par les IA</h3>
-        <p>Avec le GEO (Generative Engine Optimization), votre site est structuré pour être plus facilement compris par les moteurs et assistants IA, en complément du SEO classique.</p>
-      </div>
-    </div>
-  </section>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:2rem;">
+
+    <article style="background:var(--card);border:1px solid var(--border);border-radius:16px;padding:2rem;display:flex;flex-direction:column;">
+      <p class="section-label">Vitrine</p>
+      <div style="font-size:38px;font-weight:700;margin:.35rem 0;">39€<span style="font-size:14px;color:var(--muted);font-weight:400;">/mois</span></div>
+      <p style="color:var(--muted);font-size:13px;margin-bottom:1rem;">Être présent en ligne</p>
+      <ul style="list-style:none;display:grid;gap:.55rem;margin-bottom:1.4rem;">
+        <li>✓ Site vitrine jusqu'à 5 pages</li>
+        <li>✓ Responsive mobile</li>
+        <li>✓ Hébergement & SSL</li>
+        <li>✓ Formulaire de contact</li>
+        <li>✓ Maintenance technique</li>
+      </ul>
+      <a href="#demande-rappel" class="btn-secondary" style="margin-top:auto;">Parler de mon site →</a>
+    </article>
+
+    <article style="background:var(--card);border:1px solid var(--border);border-radius:16px;padding:2rem;display:flex;flex-direction:column;">
+      <p class="section-label">SEO Local</p>
+      <div style="font-size:38px;font-weight:700;margin:.35rem 0;">99€<span style="font-size:14px;color:var(--muted);font-weight:400;">/mois</span></div>
+      <p style="color:var(--muted);font-size:13px;margin-bottom:1rem;">Développer sa visibilité locale</p>
+      <ul style="list-style:none;display:grid;gap:.55rem;margin-bottom:1.4rem;">
+        <li>✓ Optimisations SEO prioritaires</li>
+        <li>✓ Google Business Profile</li>
+        <li>✓ Référencement local</li>
+        <li>✓ Suivi des positions</li>
+        <li>✓ Rapport mensuel</li>
+      </ul>
+      <a href="#demande-rappel" class="btn-secondary" style="margin-top:auto;">Parler de mon SEO local →</a>
+    </article>
+
+    <article style="background:var(--card);border:2px solid var(--orange);border-radius:16px;padding:2rem;display:flex;flex-direction:column;position:relative;">
+      <span style="position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--orange);color:#050505;padding:4px 12px;border-radius:999px;font-size:10px;font-weight:800;white-space:nowrap;">LE PLUS CHOISI</span>
+      <p class="section-label" style="color:var(--orange);">SEO + GEO</p>
+      <div style="font-size:38px;font-weight:700;margin:.35rem 0;">189€<span style="font-size:14px;color:var(--muted);font-weight:400;">/mois</span></div>
+      <p style="color:var(--muted);font-size:13px;margin-bottom:1rem;">Google + recherche générative</p>
+      <ul style="list-style:none;display:grid;gap:.55rem;margin-bottom:1.4rem;">
+        <li>✓ Tout le SEO Local</li>
+        <li>✓ Optimisation GEO</li>
+        <li>✓ Entités & Schema pertinents</li>
+        <li>✓ Optimisation des contenus</li>
+        <li>✓ 1 contenu stratégique/mois</li>
+      </ul>
+      <a href="#demande-rappel" class="btn-primary" style="margin-top:auto;">Choisir SEO + GEO →</a>
+    </article>
+
+    <article style="background:var(--card);border:1px solid var(--border);border-radius:16px;padding:2rem;display:flex;flex-direction:column;">
+      <p class="section-label">Business</p>
+      <div style="font-size:38px;font-weight:700;margin:.35rem 0;">249€<span style="font-size:14px;color:var(--muted);font-weight:400;">/mois</span></div>
+      <p style="color:var(--muted);font-size:13px;margin-bottom:1rem;">Développer activement sa visibilité</p>
+      <ul style="list-style:none;display:grid;gap:.55rem;margin-bottom:1.4rem;">
+        <li>✓ Tout SEO + GEO</li>
+        <li>✓ 2 contenus stratégiques/mois</li>
+        <li>✓ Analyse concurrentielle</li>
+        <li>✓ Suivi renforcé</li>
+        <li>✓ RDV stratégie 30 min/mois</li>
+      </ul>
+      <a href="#demande-rappel" class="btn-secondary" style="margin-top:auto;">Parler de Business →</a>
+    </article>
+
+    <article style="background:var(--card);border:1px solid var(--border);border-radius:16px;padding:2rem;display:flex;flex-direction:column;">
+      <p class="section-label" style="color:var(--green);">Premium</p>
+      <div style="font-size:38px;font-weight:700;margin:.35rem 0;">349€<span style="font-size:14px;color:var(--muted);font-weight:400;">/mois</span></div>
+      <p style="color:var(--muted);font-size:13px;margin-bottom:1rem;">Croissance & production</p>
+      <ul style="list-style:none;display:grid;gap:.55rem;margin-bottom:1.4rem;">
+        <li>✓ Tout Business</li>
+        <li>✓ Jusqu'à 4 contenus SEO/GEO/mois</li>
+        <li>✓ Stratégie éditoriale</li>
+        <li>✓ Rapport détaillé</li>
+        <li>✓ RDV stratégie 1 h/mois</li>
+      </ul>
+      <a href="#demande-rappel" class="btn-secondary" style="margin-top:auto;">Parler de Premium →</a>
+    </article>
+
+  </div>
+
+  <p style="color:var(--muted);font-size:12px;margin-top:1.2rem;">
+    Un contenu stratégique peut être une page service, une page locale utile, un article, une FAQ approfondie
+    ou une optimisation importante d'une page existante, selon la stratégie du mois.
+  </p>
+</section>
+
 
   <div class="divider"></div>
 
   <!-- TYPES DE SITES -->
-  <section>
-    <p class="section-label reveal">Ce que je réalise</p>
-    <h2 class="section-title reveal reveal-delay-1">Quel type de site internet pour votre activité ?</h2>
-    <p class="section-intro reveal reveal-delay-2">Chaque projet est unique. Voici les types de sites que je réalise, avec leurs usages typiques et leurs tarifs de départ.</p>
-
-    <div class="grid-2">
-      <div class="type-card green reveal">
-        <span class="type-icon">🏠</span>
-        <h3>Site vitrine</h3>
-        <p>Le site de référence pour présenter votre activité, vos services, vos coordonnées et générer des contacts. Idéal pour les artisans, commerçants, prestataires de services et professions libérales qui veulent être trouvés sur Google et convertir leurs visiteurs en prospects.</p>
-        <p>Livré avec formulaire de contact, Google Maps intégré, design sur mesure et base SEO complète. Hébergement et SSL inclus.</p>
-        <p class="type-price">À partir de 39 €/mois tout compris →</p>
-      </div>
-      <div class="type-card orange reveal reveal-delay-1">
-        <span class="type-icon">🔧</span>
-        <h3>Site pour artisan</h3>
-        <p>Une déclinaison spécialisée du site vitrine, pensée pour les métiers du bâtiment et des services : plombiers, électriciens, menuisiers, peintres, couvreurs, carreleurs, chauffagistes, paysagistes.</p>
-        <p>Pages dédiées par type de prestation, galerie de réalisations, zone d'intervention géolocalisée, demande de devis en ligne, fiche Google Business optimisée.</p>
-        <p class="type-price">À partir de 39 €/mois + SEO local disponible →</p>
-      </div>
-      <div class="type-card blue reveal reveal-delay-2">
-        <span class="type-icon">🛒</span>
-        <h3>Site e-commerce</h3>
-        <p>Pour vendre vos produits ou services en ligne : boutique avec catalogue, panier, paiement sécurisé (Stripe, PayPal), gestion des stocks et des commandes. Développé sur mesure ou avec une solution adaptée à votre volume de ventes.</p>
-        <p>Idéal pour les artisans qui vendent leurs créations, les commerçants qui veulent ouvrir un canal digital ou les prestataires qui vendent des formations.</p>
-        <p class="type-price">Sur devis selon le catalogue et les fonctionnalités →</p>
-      </div>
-      <div class="type-card green reveal reveal-delay-3">
-        <span class="type-icon">🚀</span>
-        <h3>Application web / SaaS</h3>
-        <p>Pour les startups, indépendants et PME qui ont besoin d'un outil métier sur mesure : plateforme client, espace membre, tableau de bord, outil de gestion, SaaS avec facturation et abonnements, API, marketplace.</p>
-        <p>Je développe en Next.js + Supabase : une stack moderne, rapide, évolutive et adaptée aux applications qui doivent monter en charge.</p>
-        <p class="type-price">Sur devis — de 3 à 8 semaines selon le périmètre →</p>
-      </div>
-      <div class="type-card orange reveal">
-        <span class="type-icon">🔄</span>
-        <h3>Refonte de site</h3>
-        <p>Votre site actuel est lent, mal affiché sur mobile, visuellement daté ou ne génère aucun prospect ? Je reprends votre projet de zéro avec un nouveau design, un nouveau code et un SEO repris proprement — sans perdre votre domaine ni votre historique Google.</p>
-        <p>Je gère les redirections 301, le transfert de contenu et la validation Google Search Console.</p>
-        <p class="type-price">À partir de 99 €/mois →</p>
-      </div>
-      <div class="type-card purple reveal reveal-delay-1">
-        <span class="type-icon">📱</span>
-        <h3>Application mobile</h3>
-        <p>Pour les projets qui nécessitent une présence iOS et Android : application client, outil interne, extension mobile d'un SaaS existant. Je développe en React Native / Expo pour un résultat cross-platform natif avec un seul code base.</p>
-        <p>Idéal pour les startups qui veulent lancer rapidement sur les deux stores sans doubler les coûts de développement.</p>
-        <p class="type-price">Sur devis selon les fonctionnalités →</p>
-      </div>
-    </div>
-  </section>
+  
 
   <div class="divider"></div>
 
@@ -638,7 +726,7 @@
       <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:1.75rem;border-top:2px solid var(--green);">
         <span style="font-size:26px;display:block;margin-bottom:1rem;">✅</span>
         <h3 style="font-size:16px;font-weight:700;color:var(--white);margin-bottom:8px;">Disponible dès votre création de site</h3>
-        <p style="font-size:13px;color:#aaa;line-height:1.7;">Le GEO peut être intégré dès la création de votre site ou ajouté à un site existant. Disponible en option à +49 €/mois sur les formules Starter et SEO Boost, et inclus dans la formule Pro.</p>
+        <p style="font-size:13px;color:#aaa;line-height:1.7;">Le GEO peut être intégré dès la création de votre site ou ajouté à un site existant. Il est inclus à partir de l’offre SEO + GEO à 189 €/mois.</p>
       </div>
     </div>
   </section>
@@ -647,125 +735,9 @@
 
   
   <!-- TARIFS OFFICIELS SEOKRAFT -->
-  <section id="tarifs" class="section">
-    <p class="section-label reveal">Tarifs Seokraft</p>
-    <h2 class="section-title reveal reveal-delay-1">Choisissez votre niveau d'accompagnement</h2>
-    <p class="section-intro reveal reveal-delay-2">Une gamme simple : votre site, votre visibilité locale, puis un accompagnement SEO + GEO de plus en plus soutenu. Les résultats de positionnement ou de citation par une IA ne peuvent jamais être garantis.</p>
+  
 
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:2rem;">
-      <article class="card reveal" style="display:flex;flex-direction:column;">
-        <p class="section-label">Vitrine</p>
-        <div style="font-size:38px;font-weight:700;margin:.35rem 0;">39€<span style="font-size:14px;color:var(--muted);font-weight:400;">/mois</span></div>
-        <p style="color:var(--muted);font-size:13px;margin-bottom:1rem;">Être présent en ligne</p>
-        <ul style="list-style:none;display:grid;gap:.55rem;margin-bottom:1.4rem;">
-          <li>✓ Site vitrine jusqu'à 5 pages</li><li>✓ Responsive mobile</li><li>✓ Hébergement & SSL</li><li>✓ Formulaire de contact</li><li>✓ Maintenance technique</li>
-        </ul>
-        <a href="#demande-rappel" class="btn-secondary" style="margin-top:auto;">Parler de mon site →</a>
-      </article>
-
-      <article class="card reveal reveal-delay-1" style="display:flex;flex-direction:column;">
-        <p class="section-label">SEO Local</p>
-        <div style="font-size:38px;font-weight:700;margin:.35rem 0;">99€<span style="font-size:14px;color:var(--muted);font-weight:400;">/mois</span></div>
-        <p style="color:var(--muted);font-size:13px;margin-bottom:1rem;">Développer sa visibilité locale</p>
-        <ul style="list-style:none;display:grid;gap:.55rem;margin-bottom:1.4rem;">
-          <li>✓ Optimisations SEO prioritaires</li><li>✓ Google Business Profile</li><li>✓ Référencement local</li><li>✓ Suivi des positions</li><li>✓ Rapport mensuel</li>
-        </ul>
-        <a href="#demande-rappel" class="btn-secondary" style="margin-top:auto;">Parler de mon SEO local →</a>
-      </article>
-
-      <article class="card reveal reveal-delay-2" style="display:flex;flex-direction:column;border:2px solid var(--orange);position:relative;">
-        <span style="position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--orange);color:#050505;padding:4px 12px;border-radius:999px;font-size:10px;font-weight:800;white-space:nowrap;">LE PLUS CHOISI</span>
-        <p class="section-label" style="color:var(--orange);">SEO + GEO</p>
-        <div style="font-size:38px;font-weight:700;margin:.35rem 0;">189€<span style="font-size:14px;color:var(--muted);font-weight:400;">/mois</span></div>
-        <p style="color:var(--muted);font-size:13px;margin-bottom:1rem;">Google + recherche générative</p>
-        <ul style="list-style:none;display:grid;gap:.55rem;margin-bottom:1.4rem;">
-          <li>✓ Tout le SEO Local</li><li>✓ Optimisation GEO</li><li>✓ Entités & Schema pertinents</li><li>✓ Optimisation des contenus</li><li>✓ 1 contenu stratégique/mois</li>
-        </ul>
-        <a href="#demande-rappel" class="btn-primary" style="margin-top:auto;">Choisir SEO + GEO →</a>
-      </article>
-
-      <article class="card reveal reveal-delay-2" style="display:flex;flex-direction:column;">
-        <p class="section-label">Business</p>
-        <div style="font-size:38px;font-weight:700;margin:.35rem 0;">249€<span style="font-size:14px;color:var(--muted);font-weight:400;">/mois</span></div>
-        <p style="color:var(--muted);font-size:13px;margin-bottom:1rem;">Accélérer la visibilité</p>
-        <ul style="list-style:none;display:grid;gap:.55rem;margin-bottom:1.4rem;">
-          <li>✓ Tout SEO + GEO</li><li>✓ 2 contenus stratégiques/mois</li><li>✓ Analyse concurrentielle</li><li>✓ Suivi renforcé</li><li>✓ RDV stratégie 30 min/mois</li>
-        </ul>
-        <a href="#demande-rappel" class="btn-secondary" style="margin-top:auto;">Parler de Business →</a>
-      </article>
-
-      <article class="card reveal reveal-delay-2" style="display:flex;flex-direction:column;">
-        <p class="section-label" style="color:var(--green);">Premium</p>
-        <div style="font-size:38px;font-weight:700;margin:.35rem 0;">349€<span style="font-size:14px;color:var(--muted);font-weight:400;">/mois</span></div>
-        <p style="color:var(--muted);font-size:13px;margin-bottom:1rem;">Croissance & production</p>
-        <ul style="list-style:none;display:grid;gap:.55rem;margin-bottom:1.4rem;">
-          <li>✓ Tout Business</li><li>✓ Jusqu'à 4 contenus SEO/GEO/mois</li><li>✓ Stratégie éditoriale</li><li>✓ Rapport détaillé</li><li>✓ RDV stratégie 1 h/mois</li>
-        </ul>
-        <a href="#demande-rappel" class="btn-secondary" style="margin-top:auto;">Parler de Premium →</a>
-      </article>
-    </div>
-
-    <p style="color:var(--muted);font-size:12px;margin-top:1.2rem;">Le contenu stratégique peut être une page service, une page locale utile, un article, une FAQ approfondie ou une optimisation importante d'une page existante, selon la stratégie du mois.</p>
-  </section>
-
-<!-- STARTER -->
-      <div style="background:var(--card);border:1px solid #39ff14;border-radius:16px;padding:2rem 1.5rem;display:flex;flex-direction:column;position:relative;overflow:hidden;">
-        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:#39ff14;border-radius:16px 16px 0 0;"></div>
-        <p style="font-size:11px;color:#39ff14;text-transform:uppercase;letter-spacing:3px;font-weight:600;margin-bottom:0.5rem;">Starter</p>
-        <div style="margin-bottom:0.25rem;"><span style="font-size:38px;font-weight:700;color:#fff;">39€</span><span style="font-size:14px;color:var(--muted);">/mois</span></div>
-        <p style="font-size:12px;color:var(--muted);margin-bottom:1.5rem;">Sans engagement après 3 mois</p>
-        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.75rem;margin-bottom:2rem;flex:1;">
-          <li style="font-size:14px;color:#ccc;display:flex;gap:10px;"><span style="color:#39ff14;font-weight:700;">✓</span>Site vitrine jusqu'à 5 pages</li>
-          <li style="font-size:14px;color:#ccc;display:flex;gap:10px;"><span style="color:#39ff14;font-weight:700;">✓</span>Design sur mesure</li>
-          <li style="font-size:14px;color:#ccc;display:flex;gap:10px;"><span style="color:#39ff14;font-weight:700;">✓</span>100 % responsive mobile</li>
-          <li style="font-size:14px;color:#ccc;display:flex;gap:10px;"><span style="color:#39ff14;font-weight:700;">✓</span>Formulaire de contact</li>
-          <li style="font-size:14px;color:#ccc;display:flex;gap:10px;"><span style="color:#39ff14;font-weight:700;">✓</span>Nom de domaine inclus 1ère année</li>
-          <li style="font-size:14px;color:#ccc;display:flex;gap:10px;"><span style="color:#39ff14;font-weight:700;">✓</span>Hébergement & SSL inclus</li>
-          <li style="font-size:14px;color:#ccc;display:flex;gap:10px;"><span style="color:#39ff14;font-weight:700;">✓</span>2 modifications par mois</li>
-        </ul>
-        <a href="#demande-rappel" style="display:block;text-align:center;padding:13px;border-radius:8px;background:transparent;border:1px solid #39ff14;color:#39ff14;font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:600;text-decoration:none;transition:background 0.2s;" onmouseover="this.style.background='rgba(57,255,20,0.08)'" onmouseout="this.style.background='transparent'">Être rappelé gratuitement →</a>
-      </div>
-
-      <!-- GROWTH -->
-      <div style="background:var(--card);border:1px solid #ff6b00;border-radius:16px;padding:2rem 1.5rem;display:flex;flex-direction:column;position:relative;overflow:hidden;">
-        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:#ff6b00;border-radius:16px 16px 0 0;"></div>
-        <div style="position:absolute;top:1.2rem;right:1.2rem;background:#ff6b00;color:#000;font-size:10px;font-weight:700;padding:4px 10px;border-radius:20px;letter-spacing:1px;text-transform:uppercase;">Populaire</div>
-        <p style="font-size:11px;color:#ff6b00;text-transform:uppercase;letter-spacing:3px;font-weight:600;margin-bottom:0.5rem;">Growth</p>
-        <div style="margin-bottom:0.25rem;"><span style="font-size:38px;font-weight:700;color:#fff;">99€</span><span style="font-size:14px;color:var(--muted);">/mois</span></div>
-        <p style="font-size:12px;color:var(--muted);margin-bottom:1.5rem;">Sans engagement après 6 mois</p>
-        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.75rem;margin-bottom:2rem;flex:1;">
-          <li style="font-size:14px;color:#ccc;display:flex;gap:10px;"><span style="color:#ff6b00;font-weight:700;">✓</span>Tout le Starter inclus</li>
-          <li style="font-size:14px;color:#ccc;display:flex;gap:10px;"><span style="color:#ff6b00;font-weight:700;">✓</span>SEO technique complet</li>
-          <li style="font-size:14px;color:#ccc;display:flex;gap:10px;"><span style="color:#ff6b00;font-weight:700;">✓</span>Fiche Google Business optimisée</li>
-          <li style="font-size:14px;color:#ccc;display:flex;gap:10px;"><span style="color:#ff6b00;font-weight:700;">✓</span>Référencement local & géolocalisé</li>
-          <li style="font-size:14px;color:#ccc;display:flex;gap:10px;"><span style="color:#ff6b00;font-weight:700;">✓</span>Rapport mensuel Search Console</li>
-          <li style="font-size:14px;color:#ccc;display:flex;gap:10px;"><span style="color:#ff6b00;font-weight:700;">✓</span>5 modifications par mois</li>
-          <li style="font-size:14px;color:#ccc;display:flex;gap:10px;"><span style="color:#ff6b00;font-weight:700;">✓</span>Support email sous 24h</li>
-        </ul>
-        <a href="#demande-rappel" style="display:block;text-align:center;padding:13px;border-radius:8px;background:linear-gradient(90deg,#ff6b00,#ff9500);color:#000;font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:700;text-decoration:none;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.9'" onmouseout="this.style.opacity='1'">Être rappelé gratuitement →</a>
-      </div>
-
-      <!-- PRO -->
-      <div style="background:var(--card);border:1px solid #00cfff;border-radius:16px;padding:2rem 1.5rem;display:flex;flex-direction:column;position:relative;overflow:hidden;">
-        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:#00cfff;border-radius:16px 16px 0 0;"></div>
-        <p style="font-size:11px;color:#00cfff;text-transform:uppercase;letter-spacing:3px;font-weight:600;margin-bottom:0.5rem;">Pro</p>
-        <div style="margin-bottom:0.25rem;"><span style="font-size:38px;font-weight:700;color:#fff;">199€</span><span style="font-size:14px;color:var(--muted);">/mois</span></div>
-        <p style="font-size:12px;color:var(--muted);margin-bottom:1.5rem;">Sans engagement après 12 mois</p>
-        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.75rem;margin-bottom:2rem;flex:1;">
-          <li style="font-size:14px;color:#ccc;display:flex;gap:10px;"><span style="color:#00cfff;font-weight:700;">✓</span>Tout le Growth inclus</li>
-          <li style="font-size:14px;color:#ccc;display:flex;gap:10px;"><span style="color:#00cfff;font-weight:700;">✓</span>Application web ou SaaS sur mesure</li>
-          <li style="font-size:14px;color:#ccc;display:flex;gap:10px;"><span style="color:#00cfff;font-weight:700;">✓</span>Intégrations API (paiement, réservation…)</li>
-          <li style="font-size:14px;color:#ccc;display:flex;gap:10px;"><span style="color:#00cfff;font-weight:700;">✓</span>Dashboard admin personnalisé</li>
-          <li style="font-size:14px;color:#ccc;display:flex;gap:10px;"><span style="color:#00cfff;font-weight:700;">✓</span>Support prioritaire 7j/7 sous 4h</li>
-          <li style="font-size:14px;color:#ccc;display:flex;gap:10px;font-weight:600;color:#00cfff;"><span style="font-weight:700;">✓</span>GEO inclus — optimisation pour moteurs et assistants IA</li>
-        </ul>
-        <a href="#demande-rappel" style="display:block;text-align:center;padding:13px;border-radius:8px;background:transparent;border:1px solid #00cfff;color:#00cfff;font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:600;text-decoration:none;transition:background 0.2s;" onmouseover="this.style.background='rgba(0,207,255,0.08)'" onmouseout="this.style.background='transparent'">Être rappelé gratuitement →</a>
-      </div>
-    </div>
-    <p style="text-align:center;margin-top:1.5rem;font-size:14px;color:var(--muted);">Projet hors forfait ? <a href="#demande-rappel" style="color:var(--green);text-decoration:none;font-weight:600;">Demandez un devis personnalisé →</a></p>
-  </section>
-
-  <div class="divider"></div>
+<div class="divider"></div>
 
   <!-- REALISATIONS -->
   <section>
@@ -804,36 +776,7 @@
   <div class="divider"></div>
 
   <!-- FAQ -->
-  <section>
-    <p class="section-label reveal">Questions fréquentes</p>
-    <h2 class="section-title reveal reveal-delay-1">FAQ — Création de site internet</h2>
-    <div class="faq-list reveal reveal-delay-2">
-      <div class="faq-item">
-        <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq1"><span>Combien coûte la création d'un site internet professionnel ?</span><span class="faq-icon" aria-hidden="true">+</span></button>
-        <div class="faq-a" id="faq1" aria-hidden="true"><p>Chez Seokraft, un site vitrine professionnel démarre à 39 €/mois tout compris : hébergement, SSL, nom de domaine la première année, maintenance et 2 modifications par mois incluses. Un site avec SEO local intégré est disponible à partir de 99 €/mois. Je fournis un devis gratuit et détaillé sous 24h.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq2"><span>Quelle est la différence entre un site vitrine et un site e-commerce ?</span><span class="faq-icon" aria-hidden="true">+</span></button>
-        <div class="faq-a" id="faq2" aria-hidden="true"><p>Un site vitrine présente votre activité et vos services pour générer des contacts et des appels. Un site e-commerce permet en plus de vendre des produits directement en ligne avec un panier, un paiement sécurisé et une gestion des commandes. Si vous souhaitez vendre en ligne, prévenez-moi lors du devis pour adapter la solution.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq3"><span>Vaut-il mieux créer son site avec WordPress ou en code sur mesure ?</span><span class="faq-icon" aria-hidden="true">+</span></button>
-        <div class="faq-a" id="faq3" aria-hidden="true"><p>WordPress est pratique si vous devez gérer votre contenu vous-même au quotidien. Le code sur mesure est plus rapide, plus sécurisé, mieux noté par Google et entièrement adapté à vos besoins. Chez Seokraft, je développe en code propre sans template ni plugin inutile — pour un résultat plus performant sur le long terme.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq4"><span>Combien de temps pour créer mon site ?</span><span class="faq-icon" aria-hidden="true">+</span></button>
-        <div class="faq-a" id="faq4" aria-hidden="true"><p>Un site vitrine est livré en 5 à 10 jours ouvrés après validation du devis et réception de vos contenus (textes, photos, logo). Pour un projet plus complexe comme une application web ou un SaaS, comptez entre 3 et 8 semaines selon les fonctionnalités. Le délai précis est indiqué dans le devis.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq5"><span>Mon site sera-t-il optimisé pour Google ?</span><span class="faq-icon" aria-hidden="true">+</span></button>
-        <div class="faq-a" id="faq5" aria-hidden="true"><p>Chaque site est livré avec une base SEO technique solide : balises title et meta optimisées, données structurées Schema.org, vitesse de chargement travaillée et affichage mobile parfait. Les formules Growth et Pro ajoutent un accompagnement SEO local destiné à améliorer votre visibilité sur les recherches liées à votre activité et à votre zone géographique.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq6"><span>Est-ce que mon site fonctionnera bien sur smartphone ?</span><span class="faq-icon" aria-hidden="true">+</span></button>
-        <div class="faq-a" id="faq6" aria-hidden="true"><p>Oui, sans exception. Tous les sites réalisés par Seokraft sont conçus mobile-first : je design et développe d'abord pour les petits écrans, puis j'adapte pour les écrans plus larges. Chaque page est testée sur mobile avant la livraison.</p></div>
-      </div>
-    </div>
-  </section>
+  
 
   <div class="divider"></div>
 
