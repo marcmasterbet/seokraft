@@ -28,92 +28,141 @@
   <meta name="twitter:image" content="https://www.seokraft.fr/og-image.jpg" />
 
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": "https://www.seokraft.fr/#website",
-        "url": "https://www.seokraft.fr/",
-        "name": "Seokraft",
-        "inLanguage": "fr-FR"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.seokraft.fr/#website",
+      "url": "https://www.seokraft.fr/",
+      "name": "Seokraft",
+      "inLanguage": "fr-FR"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.seokraft.fr/#business",
+      "name": "Seokraft",
+      "url": "https://www.seokraft.fr/",
+      "image": "https://www.seokraft.fr/og-image.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Fegersheim",
+        "addressRegion": "Grand Est",
+        "postalCode": "67640",
+        "addressCountry": "FR"
       },
-      {
-        "@type": "Organization",
-        "@id": "https://www.seokraft.fr/#business",
-        "name": "Seokraft",
-        "url": "https://www.seokraft.fr/",
-        "image": "https://www.seokraft.fr/og-image.jpg",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Fegersheim",
-          "addressRegion": "Grand Est",
-          "postalCode": "67640",
-          "addressCountry": "FR"
-        },
-        "areaServed": { "@type": "Country", "name": "France" }
+      "areaServed": {
+        "@type": "Country",
+        "name": "France"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.seokraft.fr/site-internet-artisan/#webpage",
+      "url": "https://www.seokraft.fr/site-internet-artisan/",
+      "name": "Création de Site Internet pour Artisan | Seokraft",
+      "description": "Création de site internet pour artisan : site vitrine, pages par métier, formulaire de devis, SEO local, Google Business Profile. À partir de 39 €/mois.",
+      "isPartOf": {
+        "@id": "https://www.seokraft.fr/#website"
       },
-      {
-        "@type": "WebPage",
-        "@id": "https://www.seokraft.fr/site-internet-artisan/#webpage",
-        "url": "https://www.seokraft.fr/site-internet-artisan/",
-        "name": "Création de Site Internet pour Artisan | Seokraft",
-        "description": "Création de site internet pour artisan : site vitrine, pages par métier, formulaire de devis, SEO local, Google Business Profile. À partir de 39 €/mois.",
-        "isPartOf": { "@id": "https://www.seokraft.fr/#website" },
-        "about": { "@id": "https://www.seokraft.fr/#business" },
-        "inLanguage": "fr-FR",
-        "breadcrumb": { "@id": "https://www.seokraft.fr/site-internet-artisan/#breadcrumb" }
+      "about": {
+        "@id": "https://www.seokraft.fr/#business"
       },
-      {
-        "@type": "Service",
-        "@id": "https://www.seokraft.fr/site-internet-artisan/#service",
-        "name": "Création de site internet pour artisan",
-        "serviceType": "Création de site internet artisan",
-        "provider": { "@id": "https://www.seokraft.fr/#business" },
-        "areaServed": { "@type": "Country", "name": "France" },
-        "description": "Sites internet professionnels pour artisans du bâtiment et des services : plombiers, électriciens, menuisiers, couvreurs, peintres, carreleurs. Pages par intervention, galerie de réalisations, formulaire de devis, SEO local intégré.",
-        "url": "https://www.seokraft.fr/site-internet-artisan/",
-        "mainEntityOfPage": { "@id": "https://www.seokraft.fr/site-internet-artisan/#webpage" },
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Offres site internet artisan",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "name": "Vitrine — Site vitrine artisan",
+      "inLanguage": "fr-FR",
+      "breadcrumb": {
+        "@id": "https://www.seokraft.fr/site-internet-artisan/#breadcrumb"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.seokraft.fr/site-internet-artisan/#service",
+      "name": "Création de site internet pour artisan",
+      "serviceType": "Création de site internet artisan",
+      "provider": {
+        "@id": "https://www.seokraft.fr/#business"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "France"
+      },
+      "description": "Sites internet professionnels pour artisans du bâtiment et des services : plombiers, électriciens, menuisiers, couvreurs, peintres, carreleurs. Pages par intervention, galerie de réalisations, formulaire de devis, SEO local intégré.",
+      "url": "https://www.seokraft.fr/site-internet-artisan/",
+      "mainEntityOfPage": {
+        "@id": "https://www.seokraft.fr/site-internet-artisan/#webpage"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Offres site internet artisan",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Vitrine",
+            "price": "39",
+            "priceCurrency": "EUR",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
               "price": "39",
               "priceCurrency": "EUR",
-              "priceSpecification": { "@type": "UnitPriceSpecification", "price": "39", "priceCurrency": "EUR", "billingDuration": "P1M" },
-              "description": "Site vitrine artisan jusqu'à 5 pages, design sur mesure, formulaire de devis, hébergement et SSL inclus"
+              "billingDuration": "P1M"
             },
-            {
-              "@type": "Offer",
-              "name": "SEO + GEO — Site artisan + SEO local",
+            "description": "Site vitrine jusqu’à 5 pages, responsive, hébergement, SSL, formulaire de contact et maintenance technique."
+          },
+          {
+            "@type": "Offer",
+            "name": "SEO Local",
+            "price": "99",
+            "priceCurrency": "EUR",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
               "price": "99",
               "priceCurrency": "EUR",
-              "priceSpecification": { "@type": "UnitPriceSpecification", "price": "99", "priceCurrency": "EUR", "billingDuration": "P1M" },
-              "description": "Site artisan + SEO technique + Google Business Profile + référencement local"
-            }
-          ]
-        }
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": "https://www.seokraft.fr/site-internet-artisan/#breadcrumb",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.seokraft.fr/" },
-          { "@type": "ListItem", "position": 2, "name": "Création site internet", "item": "https://www.seokraft.fr/creation-site-internet/" },
-          { "@type": "ListItem", "position": 3, "name": "Site internet artisan", "item": "https://www.seokraft.fr/site-internet-artisan/" }
-        ]
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://www.seokraft.fr/site-internet-artisan/#faq",
-        "mainEntity": [
+              "billingDuration": "P1M"
+            },
+            "description": "SEO technique prioritaire, Google Business Profile, référencement local, suivi des positions et rapport mensuel."
+          },
           {
-            "@type": "Question",
-            "name": "Combien coûte un site internet pour un artisan ?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Chez Seokraft, un site internet pour artisan démarre à 39 €/mois tout compris : hébergement, SSL, nom de domaine la première année, formulaire de devis, design sur mesure et 2 modifications par mois. L’offre SEO Local à 99 €/mois travaille la visibilité locale. L’offre SEO + GEO à 189 €/mois ajoute le GEO et un contenu stratégique mensuel.</script>
+            "@type": "Offer",
+            "name": "SEO + GEO",
+            "price": "189",
+            "priceCurrency": "EUR",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "189",
+              "priceCurrency": "EUR",
+              "billingDuration": "P1M"
+            },
+            "description": "SEO Local, GEO, entités et données structurées, optimisation des contenus et 1 contenu stratégique par mois."
+          }
+        ]
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.seokraft.fr/site-internet-artisan/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://www.seokraft.fr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Création site internet",
+          "item": "https://www.seokraft.fr/creation-site-internet/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Site internet artisan",
+          "item": "https://www.seokraft.fr/site-internet-artisan/"
+        }
+      ]
+    }
+  ]
+}
+  </script>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18388328221"></script>
   <script>
