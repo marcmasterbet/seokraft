@@ -28,99 +28,148 @@
   <meta name="twitter:image" content="https://www.seokraft.fr/og-image.jpg" />
 
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": "https://www.seokraft.fr/#website",
-        "url": "https://www.seokraft.fr/",
-        "name": "Seokraft",
-        "inLanguage": "fr-FR"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.seokraft.fr/#website",
+      "url": "https://www.seokraft.fr/",
+      "name": "Seokraft",
+      "inLanguage": "fr-FR"
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://www.seokraft.fr/#business",
+      "name": "Seokraft",
+      "url": "https://www.seokraft.fr/",
+      "image": "https://www.seokraft.fr/og-image.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Fegersheim",
+        "addressRegion": "Grand Est",
+        "postalCode": "67640",
+        "addressCountry": "FR"
       },
-      {
-        "@type": "ProfessionalService",
-        "@id": "https://www.seokraft.fr/#business",
-        "name": "Seokraft",
-        "url": "https://www.seokraft.fr/",
-        "image": "https://www.seokraft.fr/og-image.jpg",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Fegersheim",
-          "addressRegion": "Grand Est",
-          "postalCode": "67640",
-          "addressCountry": "FR"
-        },
-        "areaServed": { "@type": "Country", "name": "France" }
+      "areaServed": {
+        "@type": "Country",
+        "name": "France"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.seokraft.fr/referencement-seo/#webpage",
+      "url": "https://www.seokraft.fr/referencement-seo/",
+      "name": "Référencement SEO : améliorez votre visibilité sur Google | Seokraft",
+      "description": "Référencement SEO professionnel : SEO technique, contenu, SEO local, Core Web Vitals, données structurées. Accompagnement mensuel pour artisans, PME et indépendants.",
+      "isPartOf": {
+        "@id": "https://www.seokraft.fr/#website"
       },
-      {
-        "@type": "WebPage",
-        "@id": "https://www.seokraft.fr/referencement-seo/#webpage",
-        "url": "https://www.seokraft.fr/referencement-seo/",
-        "name": "Référencement SEO : améliorez votre visibilité sur Google | Seokraft",
-        "description": "Référencement SEO professionnel : SEO technique, contenu, SEO local, Core Web Vitals, données structurées. Accompagnement mensuel pour artisans, PME et indépendants.",
-        "isPartOf": { "@id": "https://www.seokraft.fr/#website" },
-        "about": { "@id": "https://www.seokraft.fr/#business" },
-        "inLanguage": "fr-FR",
-        "breadcrumb": { "@id": "https://www.seokraft.fr/referencement-seo/#breadcrumb" }
+      "about": {
+        "@id": "https://www.seokraft.fr/#business"
       },
-      {
-        "@type": "Service",
-        "@id": "https://www.seokraft.fr/referencement-seo/#service",
-        "name": "Référencement SEO",
-        "serviceType": "Référencement SEO",
-        "provider": { "@id": "https://www.seokraft.fr/#business" },
-        "areaServed": { "@type": "Country", "name": "France" },
-        "description": "Accompagnement SEO mensuel : audit technique, optimisation on-page, SEO local, Core Web Vitals, données structurées Schema.org, suivi Search Console et reporting mensuel.",
-        "url": "https://www.seokraft.fr/referencement-seo/",
-        "mainEntityOfPage": { "@id": "https://www.seokraft.fr/referencement-seo/#webpage" },
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Offres référencement SEO",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "name": "SEO Local",
-              "price": "50",
-              "priceCurrency": "EUR",
-              "priceSpecification": { "@type": "UnitPriceSpecification", "price": "50", "priceCurrency": "EUR", "billingDuration": "P1M" },
-              "description": "Audit SEO, Google Business Profile, référencement local, rapport mensuel Search Console"
-            },
-            {
-              "@type": "Offer",
-              "name": "SEO + GEO — Site + SEO",
+      "inLanguage": "fr-FR",
+      "breadcrumb": {
+        "@id": "https://www.seokraft.fr/referencement-seo/#breadcrumb"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.seokraft.fr/referencement-seo/#service",
+      "name": "Référencement SEO",
+      "serviceType": "Référencement SEO",
+      "provider": {
+        "@id": "https://www.seokraft.fr/#business"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "France"
+      },
+      "description": "Accompagnement SEO mensuel : audit technique, optimisation on-page, SEO local, Core Web Vitals, données structurées Schema.org, suivi Search Console et reporting mensuel.",
+      "url": "https://www.seokraft.fr/referencement-seo/",
+      "mainEntityOfPage": {
+        "@id": "https://www.seokraft.fr/referencement-seo/#webpage"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Offres référencement SEO",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "SEO Local",
+            "price": "99",
+            "priceCurrency": "EUR",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
               "price": "99",
               "priceCurrency": "EUR",
-              "priceSpecification": { "@type": "UnitPriceSpecification", "price": "99", "priceCurrency": "EUR", "billingDuration": "P1M" },
-              "description": "Site vitrine + SEO technique complet + Google Business Profile + référencement local"
+              "billingDuration": "P1M"
             },
-            {
-              "@type": "Offer",
-              "name": "Pro — SEO + GEO complet",
+            "description": "SEO technique prioritaire, Google Business Profile, référencement local, suivi des positions et rapport mensuel."
+          },
+          {
+            "@type": "Offer",
+            "name": "SEO + GEO",
+            "price": "189",
+            "priceCurrency": "EUR",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
               "price": "189",
               "priceCurrency": "EUR",
-              "priceSpecification": { "@type": "UnitPriceSpecification", "price": "189", "priceCurrency": "EUR", "billingDuration": "P1M" },
-              "description": "SEO complet + GEO + application web ou SaaS + support prioritaire"
-            }
-          ]
-        }
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": "https://www.seokraft.fr/referencement-seo/#breadcrumb",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.seokraft.fr/" },
-          { "@type": "ListItem", "position": 2, "name": "Référencement SEO", "item": "https://www.seokraft.fr/referencement-seo/" }
-        ]
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://www.seokraft.fr/referencement-seo/#faq",
-        "mainEntity": [
+              "billingDuration": "P1M"
+            },
+            "description": "SEO Local, GEO, entités et données structurées, optimisation des contenus et 1 contenu stratégique par mois."
+          },
           {
-            "@type": "Question",
-            "name": "Combien coûte le référencement SEO ?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Chez Seokraft, l’offre SEO Local est proposée à 99 €/mois. L’offre SEO + GEO à 189 €/mois ajoute la couche GEO et un contenu stratégique mensuel.</script>
+            "@type": "Offer",
+            "name": "Business",
+            "price": "249",
+            "priceCurrency": "EUR",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "249",
+              "priceCurrency": "EUR",
+              "billingDuration": "P1M"
+            },
+            "description": "SEO + GEO, 2 contenus stratégiques par mois, analyse concurrentielle, suivi renforcé et rendez-vous stratégie de 30 minutes par mois."
+          },
+          {
+            "@type": "Offer",
+            "name": "Premium",
+            "price": "349",
+            "priceCurrency": "EUR",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "349",
+              "priceCurrency": "EUR",
+              "billingDuration": "P1M"
+            },
+            "description": "Business, jusqu’à 4 contenus SEO/GEO par mois, stratégie éditoriale, rapport détaillé et rendez-vous stratégie de 1 heure par mois."
+          }
+        ]
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.seokraft.fr/referencement-seo/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://www.seokraft.fr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Référencement SEO",
+          "item": "https://www.seokraft.fr/referencement-seo/"
+        }
+      ]
+    }
+  ]
+}
+  </script>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18388328221"></script>
   <script>
